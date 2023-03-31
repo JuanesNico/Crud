@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    {% load static %}
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body class="a">
+    <form method="POST" action="/emp">
+        {% csrf_token %}
+        <div>
+            <br>
+            <p>
+            <h3>Ingresar Datos</h3>
+            </p>
+            <div>
+                <p>ID Empleado:</p>{{ form.eid }}
+            </div>
+            <div>
+                <p>Nombre Empleado:</p>{{ form.ename }}
+            </div>
+            <div>
+                <p>Correo Empleado:</p>{{ form.eemail }}
+            </div>
+            <div>
+                <p>Número Empleado:</p>{{ form.econtact }}
+            </div>
+            <div>
+                <p>Dirección Empleado:</p>{{ form.eaddress}}
+            </div>
+            <div>
+                <p>Edad Empleado:</p>{{ form.eage}}
+            </div>
+            <div>
+                <br>
+                <button type="submit">Ingresar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

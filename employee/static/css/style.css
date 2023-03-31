@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 125px;
+    margin-left: 125px;
+}
+
+h1 {
+    border: 15px solid black;
+    border-radius: 20px;
+    border-style: double;
+    font-family: "century gothic";
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "century gothic";
+}
+
+p {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "century gothic";
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(38, 231, 141);
+    font-family: "century gothic";
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(30, 148, 93);
+}
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+body.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 83vh;
+    background: rgb(38, 231, 141);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Title h1 {
+    color: white;
+}
+
+#Title button {
+    font-size: 1.75em;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(118, 200, 221);
+    font-family: "century gothic";
+    font-size: 25px;
+}
+
+tr:hover {
+    background-color: rgb(30, 148, 93);
+}
+
+th {
+    background-color: rgb(30, 148, 93);
+    color: white;
+}
+
+.Editar a {
+    color: blue;
+    text-decoration: none;
+}
+
+.Borrar a {
+    color: red;
+    text-decoration: none;
+}
+
+.Editar {
+    width: 10%;
+}
+
+.Borrar {
+    width: 10%;
+}

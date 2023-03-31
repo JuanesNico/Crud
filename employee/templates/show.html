@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Empleados</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <img src="../static/img/Logo.png" />
+    </header>
+    <section id="Title">
+        <br>
+        <br>
+        <br>
+        <h1>¡Bienvenido a Exotic Lemons!</h1>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Empleado</th>
+                    <th>Nombre Empleado</th>
+                    <th>Correo Empleado</th>
+                    <th>Número Empleado</th>
+                    <th>Dirección Empleado</th>
+                    <th>Edad Empleado</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for employee in employees %}
+                <tr>
+                    <td>{{ employee.eid }}</td>
+                    <td>{{employee.ename}}</td>
+                    <td>{{employee.eemail}}</td>
+                    <td>{{employee.econtact}}</td>
+                    <td>{{employee.eaddress}}</td>
+                    <td>{{employee.eage}}</td>
+
+                    <td class="Editar"><a href="/edit/{{ employee.id }}">Editar</a></td>
+                    <td class="Borrar"><a href="/delete/{{ employee.id}}">Borrar</a></td>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <button><a style="color:white;" href="/emp">Agregar Datos Nuevos</a></button>
+</body>
+
+</html>
